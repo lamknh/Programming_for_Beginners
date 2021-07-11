@@ -19,10 +19,10 @@ int main(void)
 
 	for (int j = 0; j < 50; j++) {
 
-		strncpy(display_string, input_string + i, len);
+		strncpy(display_string, input_string + i, len); // 마지막꺼 복사되는 최대 문자 수 
 		printf("%s", display_string);
 		
-		display_string[strlen(input_string) - 1] = input_string[0];
+		display_string[strlen(input_string) - 1] = input_string[0]; // strlen(input_string)하면 마지막 NULL이니까
 		
 		strcpy(input_string, display_string); //출력 문자열을 입력 문자열에 복사
 

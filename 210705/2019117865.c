@@ -47,7 +47,7 @@ int add(struct music list[], int cnt) {
 		if (list[cnt].genre < 0 || list[cnt].genre > 3) {
 			printf("잘못 입력된 장르입니다. 다시 입력해주십시오 >>");
 		}
-	} while (list[cnt].genre < 0 || list[cnt].genre > 3);
+	} while (list[cnt].genre < 0 || list[cnt].genre > 3); // 해당 조건일 때 탈출
 
 	cnt++;
 

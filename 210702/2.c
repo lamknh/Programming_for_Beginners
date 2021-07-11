@@ -20,7 +20,7 @@ int main(void)
 			printf("%c", ptoken[i]);
 		}
 		printf(" ");
-		ptoken = strtok(NULL, " ");
+		ptoken = strtok(NULL, " "); // 기존에 있던 문자열 다음부터
 	}
 
 	return 0;
